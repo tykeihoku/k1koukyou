@@ -229,6 +229,120 @@ img {
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+p{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    p{
+        background-color: black;
+         color:green;
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    p{
+        background-color: black;
+         color:red;
+     }
+ }
+h1 {
+    font-family: "Hannari", serif;
+    display: block;
+    width: 1000;
+    margin:  0 auto;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size : 0.5in;
+    color : whitesmoke;
+    letter-spacing: 5px;
+    background-color : #0c0680;
+}
+p {
+    font-family: "Hannari", serif;
+    font-size : 0.3in;
+    width: 500;
+    line-height: 1;
+    background-color: #03A9F4;
+    padding: 20px;
+    position: relative;
+    margin: 20px 0 0;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+ul li{
+    font-family: "Hannari", serif;
+    display: block;
+    font-size : 0.2in;
+    background-color: #fff;
+    padding: 0px 10px 1px;
+    max-width: 500px;
+    margin: 0.1px auto;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 1px;
+    position: relative;
+    list-style: none;
+}
+a:not(.noadjust) {
+    color: #fff;
+    text-decoration: none;
+    background-color: #F44336;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 400px;
+    box-shadow: 0 4px 0 0 #9e2b23;
+    font-weight: bold;
+    width: 500px;
+    text-align: center;
+    margin: 20px auto 0;
+    letter-spacing: 2px;
+}
+table{
+  border-collapse:separate;
+  border-spacing: 5px;
+  width: 100%;
+}
+
+table th,table td {
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th{
+  background-color: #0000cd;
+  color: white;
+  border:solid 1px #927141;
+}
+
+table td {
+  background-color: #e0ffff;
+  border:solid 1px #af9d85;
+  color: black;
+  font-weight: bold;
+  font-size: 0.2in;
+}
+table td a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+} 
+img {
+    text-align: right;
+}
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
   <link rel="icon" href="ico/toyo.ico">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -264,6 +378,7 @@ img {
 <p>一問一答</p>
 <ul>
     <li><a href="https://script.google.com/a/macros/toyo-keihoku.jp/s/AKfycbxSZ5uAhZFdovYM0FEbsDQqUo1zZg9TUCC0O-Xb7dP_5yTyPq4TkfJsS589AYkNkW4p/exec" target="_blank">キリスト教</a></li>
+    <li><a href="https://script.google.com/a/macros/toyo-keihoku.jp/s/AKfycbx75RKy4FLAwE8zBYyeLgviHWGqWaMCClA8n_B38SA/dev" target="_blank">キリスト教２～ルネサンス</a></li>
 </ul>
 
 <p>各クラスのハンドアウト</p>
@@ -359,6 +474,11 @@ img {
 </html>
 
 <script src="filesystem:https://webmaker.app/temporary/script.js">
+</script>
+</body>
+</html>
+
+<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
 </script>
 </body>
 </html>
