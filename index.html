@@ -4,24 +4,6 @@
 <meta charset="UTF-8" />
 
 <style id="webmakerstyle">
-p{
-    background-color: black;
-    color: white;
-}
-
-@media screen and (max-width: 768px) {
-    p{
-        background-color: black;
-         color:green;
-     }
- }
- 
- @media screen and (max-width: 480px) {
-    p{
-        background-color: black;
-         color:red;
-     }
- }
 h1 {
     font-family: "Hannari", serif;
     display: block;
@@ -36,7 +18,7 @@ h1 {
     background-color : #0c0680;
 }
 p {
-    font-family: "Hannari", serif;
+    font-family: "ヒラギノ丸ゴ ProN W6";
     font-size : 0.3in;
     width: 500;
     line-height: 1;
@@ -47,33 +29,6 @@ p {
     color: #fff;
     letter-spacing: 1px;
     text-align: center;
-}
-ul li{
-    font-family: "Hannari", serif;
-    display: block;
-    font-size : 0.2in;
-    background-color: #fff;
-    padding: 0px 10px 1px;
-    max-width: 500px;
-    margin: 0.1px auto;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 1px;
-    position: relative;
-    list-style: none;
-}
-a:not(.noadjust) {
-    color: #fff;
-    text-decoration: none;
-    background-color: #F44336;
-    display: block;
-    padding: 10px 15px;
-    border-radius: 400px;
-    box-shadow: 0 4px 0 0 #9e2b23;
-    font-weight: bold;
-    width: 500px;
-    text-align: center;
-    margin: 20px auto 0;
-    letter-spacing: 2px;
 }
 table{
   border-collapse:separate;
@@ -109,119 +64,54 @@ table td a{
 img {
     text-align: right;
 }
-</style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-
-<style id="webmakerstyle">
-p{
-    background-color: black;
-    color: white;
+marquee {
+  　font-family: "Hiragino Maru Gothic ProN W4";
 }
 
-@media screen and (max-width: 768px) {
-    p{
-        background-color: black;
-         color:green;
-     }
- }
- 
- @media screen and (max-width: 480px) {
-    p{
-        background-color: black;
-         color:red;
-     }
- }
-h1 {
-    font-family: "Hannari", serif;
-    display: block;
-    width: 1000;
-    margin:  0 auto;
-    font-weight: normal;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size : 0.5in;
-    color : whitesmoke;
-    letter-spacing: 5px;
-    background-color : #0c0680;
-}
-p {
-    font-family: "Hannari", serif;
-    font-size : 0.3in;
-    width: 500;
-    line-height: 1;
-    background-color: #03A9F4;
-    padding: 20px;
+.button a {
     position: relative;
-    margin: 20px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 9999px;
+    max-width: 350px;
+    padding: 10px 25px;
+    font-family: "Noto Sans Japanese";
     color: #fff;
-    letter-spacing: 1px;
-    text-align: center;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    background: linear-gradient(270deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+    background-position: 1% 50%;
+    background-size: 200% auto;
+    transition: all 0.3s ease-out;
 }
-ul li{
-    font-family: "Hannari", serif;
-    display: block;
-    font-size : 0.2in;
-    background-color: #fff;
-    padding: 0px 10px 1px;
-    max-width: 500px;
-    margin: 0.1px auto;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.18);
+.button a:hover {
+    color: #fff;
+    background-position: 99% 50%;
+    transform: scale(1.05);
+    /*ボックスの影*/  
+    box-shadow: 0 15px 15px rgba(87,111,230,0.4);
+}
+.button a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
     border-radius: 1px;
-    position: relative;
-    list-style: none;
+    transition: 0.3s ease-in-out;
 }
-a:not(.noadjust) {
-    color: #fff;
-    text-decoration: none;
-    background-color: #F44336;
-    display: block;
-    padding: 10px 15px;
-    border-radius: 400px;
-    box-shadow: 0 4px 0 0 #9e2b23;
-    font-weight: bold;
-    width: 500px;
+body{
+    vertical-align:middle; 
+    padding: 50px 0;
     text-align: center;
-    margin: 20px auto 0;
-    letter-spacing: 2px;
-}
-table{
-  border-collapse:separate;
-  border-spacing: 5px;
-  width: 100%;
-}
-
-table th,table td {
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px 0;
-}
-
-table th{
-  background-color: #0000cd;
-  color: white;
-  border:solid 1px #927141;
-}
-
-table td {
-  background-color: #e0ffff;
-  border:solid 1px #af9d85;
-  color: black;
-  font-weight: bold;
-  font-size: 0.2in;
-}
-table td a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-} 
-img {
-    text-align: right;
 }
 </style>
 </head>
@@ -229,191 +119,156 @@ img {
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" />
-
-<style id="webmakerstyle">
-p{
-    background-color: black;
-    color: white;
-}
-
-@media screen and (max-width: 768px) {
-    p{
-        background-color: black;
-         color:green;
-     }
- }
- 
- @media screen and (max-width: 480px) {
-    p{
-        background-color: black;
-         color:red;
-     }
- }
-h1 {
-    font-family: "Hannari", serif;
-    display: block;
-    width: 1000;
-    margin:  0 auto;
-    font-weight: normal;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size : 0.5in;
-    color : whitesmoke;
-    letter-spacing: 5px;
-    background-color : #0c0680;
-}
-p {
-    font-family: "Hannari", serif;
-    font-size : 0.3in;
-    width: 500;
-    line-height: 1;
-    background-color: #03A9F4;
-    padding: 20px;
-    position: relative;
-    margin: 20px 0 0;
-    color: #fff;
-    letter-spacing: 1px;
-    text-align: center;
-}
-ul li{
-    font-family: "Hannari", serif;
-    display: block;
-    font-size : 0.2in;
-    background-color: #fff;
-    padding: 0px 10px 1px;
-    max-width: 500px;
-    margin: 0.1px auto;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 1px;
-    position: relative;
-    list-style: none;
-}
-a:not(.noadjust) {
-    color: #fff;
-    text-decoration: none;
-    background-color: #F44336;
-    display: block;
-    padding: 10px 15px;
-    border-radius: 400px;
-    box-shadow: 0 4px 0 0 #9e2b23;
-    font-weight: bold;
-    width: 500px;
-    text-align: center;
-    margin: 20px auto 0;
-    letter-spacing: 2px;
-}
-table{
-  border-collapse:separate;
-  border-spacing: 5px;
-  width: 100%;
-}
-
-table th,table td {
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px 0;
-}
-
-table th{
-  background-color: #0000cd;
-  color: white;
-  border:solid 1px #927141;
-}
-
-table td {
-  background-color: #e0ffff;
-  border:solid 1px #af9d85;
-  color: black;
-  font-weight: bold;
-  font-size: 0.2in;
-}
-table td a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-} 
-img {
-    text-align: right;
-}
-</style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="icon" href="ico/toyo.ico">
+  
+  <h2nk rel="icon" href="ico/toyo.ico">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>2023K1公共リンク集（第5回）</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>2025K1公共リンク集（第3回）</title>
+	<h2nk href="style.css" rel="stylesheet" type="text/css">
 </head>
+    
 <body>
-<h1>2023K1公共リンク集（第5回）</h1>
+  
+  
+<h1>2025K1公共リンク集（第3回）</h1>
+<marquee class="title" bgcolor="#000000">
+      <font color="#ffff00" size=6>教科書：pp.16-17, 19, 44-53<br>資料集（倫理）：pp.37-38（進学のみ）, 118-123（社会契約説の部分のみ）<br>資料集（政経）：pp.24-25, 50-53, 71-105
+      </font>
+</marquee>
+  
+
+  
 <p>閲覧用リンク</p>
 <ul>
-
-    <li><a href="https://docs.google.com/spreadsheets/d/17uk6n4A2bjU_E6XCyPRKnxEiaG4yD8mnsLcYjJi0DRY/edit?usp=sharing" target="_blank">課題提出状況</a></li>
-  　<li><a href="http://tinyurl.com/ytyvjo8y" target="_blank">スケジュール</a></li>
-  　<li><a href="http://tinyurl.com/2cbmwouj" target="_blank">用語集</a></li>
-    <li><a href="https://tinyurl.com/2on44mlw" target="_blank">公共質問箱</a></li>
-  
+  <div class="button">
+    <h2><span>01</span>
+      <a href="https://docs.google.com/spreadsheets/d/1hovXwEzks745qAP3gxljYv7J0vwIAVWBwDo_BTE_3sQ/edit?usp=sharing" target="_blank">用語集とスケジュール</a></h2>
+    <h2><span>02</span>
+      <a href="https://drive.google.com/open?id=1yGJNEm-1beA-Xfnt193gHACY1Gd0AP-R&usp=drive_fs" target="_blank">第3回考査範囲資料</a></h2>
+    <h2><span>03</span>
+      <a href="" target="_blank">課題提出状況（準備中）</a></h2>
+    <h2><span>04</span>
+      <a href="https://tinyurl.com/2on44mlw" target="_blank">公共質問箱（回答）</a></h2>
+    <h2><span>05</span>
+      <a href="" target="_blank">模範解答（考査後）</a></h2>
 </ul>
+
 <p>共通課題用リンク</p>
 <ul>
-    <li><a href="https://forms.gle/rzbBbvDf5vF53QA27" target="_blank">ふりかえりフォーム</a></li>
-    <li><a href="https://forms.gle/5HnzGJhKcYtbzdY76" target="_blank">授業のまとめ</a></li>
-    <li><a href="https://forms.gle/8qvmgQ4nVu9kXQxn8" target="_blank">公共質問箱</a></li>
+  <div class="button">
+    <h2><span>01</span>
+      <a href="https://forms.gle/8BPkF81pfFdvLETX7" target="_blank">授業グループ作成用form</a></h2>
+    <h2><span>02</span>
+      <a href="https://forms.gle/n4jFLEsLjdszumtm6" target="_blank">振り返りフォーム</a></h2>
+    <h2><span>03</span>
+      <a href="https://forms.gle/Gbrt77e3L5zwAR4B6" target="_blank">授業のまとめ</a></h2>
+        <h2><span>04</span>
+      <a href="https://forms.gle/8qvmgQ4nVu9kXQxn8" target="_blank">公共質問箱</a></h2>
 </ul>
+    
 <p>確認テスト</p>
 <ul>
-    <li><a href="https://forms.gle/B2krmb7kmsRhGMg19" target="_blank">ユダヤ教&イエス</a></li>
-    <li><a href="https://forms.gle/Bm3D1Y76iu86M7mq6" target="_blank">教父哲学</a></li>
-    <li><a href="https://forms.gle/sxdoCD64TbxCzsSF6" target="_blank">宗教改革</a></li>
-    <li><a href="https://forms.gle/qtYkpjibpU3fCY4N8" target="_blank">モラリスト</a></li>
-    <li><a href="https://forms.gle/X2ftbJyM59f5yH2P8" target="_blank">ルネサンス</a></li>
-    <li><a href="https://forms.gle/zuunFQKeL6Kp1QTo9" target="_blank">経済学入門</a></li>
+  <div class="button">
+    <h2><span>01</span>
+      <a href="https://forms.gle/m8KKHQLa2bCY1NAf6" target="_blank">社会契約説</a></h2>
+    <h2><span>02</span>
+      <a href="https://forms.gle/f4hFHSWjTSKFyogk7" target="_blank">明治憲法と日本国憲法</a></h2>
+    <h2><span>03</span>
+      <a href="https://forms.gle/tEsSmPGy3hm6HwkD8" target="_blank">平等権</a></h2>
+    <h2><span>04</span>
+      <a href="https://forms.gle/LUCQQcRAbAvC7s7g7" target="_blank">精神の自由</a></h2>
+    <h2><span>05</span>
+      <a href="https://forms.gle/j2BU53fymrzZKB7G7" target="_blank">人身の自由</a></h2>
+    <h2><span>06</span>
+      <a href="" target="_blank">経済の自由</a></h2>
+    <h2><span>07</span>
+      <a href="https://forms.gle/nFsPjdS3noH72igk7" target="_blank">社会権</a></h2>
 </ul>
-<p>一問一答</p>
-<ul>
-    <li><a href="https://script.google.com/a/macros/toyo-keihoku.jp/s/AKfycbxSZ5uAhZFdovYM0FEbsDQqUo1zZg9TUCC0O-Xb7dP_5yTyPq4TkfJsS589AYkNkW4p/exec" target="_blank">キリスト教</a></li>
-    <li><a href="https://script.google.com/a/macros/toyo-keihoku.jp/s/AKfycbzkqf4mGEFzusSVExNHstu5vCW494nz_e3dp6PQhh6f5Hqh_XUgygWM-_oyDXv6u1IX/exec" target="_blank">キリスト教２～ルネサンス</a></li>
-</ul>
-
-<p>各クラスのハンドアウト</p>
+  
+  <p>各クラスのハンドアウト</p>
 <table>
    <tbody>
         <tr>
-            <th width=12.5%>ハンドアウト</th>
-            <td width=12.5%>キ①</td>
-            <td width=12.5%>キ②</td>
-            <td width=12.5%>キ③</td>
-            <td width=12.5%>キ④</td>
-            <td width=12.5% colspan="2">ルネ</td>
-            <td width=12.5%>経済</td>
+            <th width=12.5%>ハンド<br>アウト</th>
+            <td width=12.5% colspan="2">社会契約説</td>
+            <td width=12.5%>憲法</td>
+            <td width=12.5%>平等権</td>
+            <td width=12.5%>精神の自由</td>
+            <td width=12.5%>人身の自由</td>
+            <td width=12.5%>経済の自由</td>
+            <td width=12.5%>社会権</td>
 
         </tr>
          <tr>
-            <th>K1-1</th>
-            <td><a class="noadjust" href="http://tinyurl.com/ylwcyr9b" target="_blank"</a>F</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yw4b5bc6" target="_blank"</a>D</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yomqu56x" target="_blank"</a>B</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yklzdgvq" target="_blank"</a>E</td>
-            <td><a class="noadjust" href="http://tinyurl.com/2bu7t9l5" target="_blank"</a>A</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ytwmzgj9" target="_blank"</a>C</td>
-            <td><a class="noadjust" href="https://drive.google.com/drive/folders/1tD8PKdD7g5o9lUxCSYeTwk0P8uwFpNR6?usp=sharing" target="_blank"</a>資料集</td>
+            <th>K1-4</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
         </tr>
          <tr>
-            <th>K1-2</th>
-            <td><a class="noadjust" href="http://tinyurl.com/yuh3q6yu" target="_blank"</a>F</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yq8dujnq" target="_blank"</a>A</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ynmm2zm4" target="_blank"</a>C</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yr5zlyct" target="_blank"</a>E</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ykesnc5b" target="_blank"</a>B</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ysqulzac" target="_blank"</a>D</td>
-            <td><a class="noadjust" href="http://tinyurl.com/27urpbko" target="_blank"</a>T</td></td>
-
+            <th>K1-5</th>
+            <td  colspan="2"><a class="noadjust" href="https://tinyurl.com/yoo9vu8q" target="_blank"</a>F</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yt4pn5p9" target="_blank"</a>G</td>
+            <td><a class="noadjust" href="https://tinyurl.com/ysbrqn6v" target="_blank"</a>E</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yqhupa66" target="_blank"</a>A</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yu2am9kr" target="_blank"</a>C</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yno3toop" target="_blank"</a>D</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yte6th9g" target="_blank"</a>B</td>
+        </tr>
+        <tr>
+            <th>K1-6</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+        </tr>
+         <tr>
+            <th>K1-7</th>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+        </tr>
+        <tr>
+            <th>K1-8</th>
+            <td  colspan="2"><a class="noadjust" href="https://tinyurl.com/ylaptx3w" target="_blank"</a>F</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yquqdj6w" target="_blank"</a>B</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yqc3875r" target="_blank"</a>G</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yljn3yba" target="_blank"</a>A</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yn8y7ccp" target="_blank"</a>E</td>
+            <td><a class="noadjust" href="https://tinyurl.com/ynyr3y9o" target="_blank"</a>C</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yn4da2r9" target="_blank"</a>D</td>
+        </tr>
+        <tr>
+            <th>K1-9</th>
+            <td  colspan="2"><a class="noadjust" href="https://tinyurl.com/yn9d8l2c" target="_blank"</a>D</td>
+            <td><a class="noadjust" href="https://tinyurl.com/ywlg8ybv" target="_blank"</a>B</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yse9x8dg" target="_blank"</a>C</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yofqto3v" target="_blank"</a>E</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yvklhx9m" target="_blank"</a>F</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yphpp84g" target="_blank"</a>G</td>
+            <td><a class="noadjust" href="https://tinyurl.com/yqwst26t" target="_blank"</a>A</td>
+        </tr>
+             <tr>
+            <th>K1-10</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
         </tr>
       
     </tbody>
@@ -422,63 +277,93 @@ img {
 <table>
    <tbody>
         <tr>
-            <th width=12.5%>スライド</th>
-            <td width=12.5%>キ①</td>
-            <td width=12.5%>キ②</td>
-            <td width=12.5%>キ③</td>
-            <td width=12.5%>キ④</td>
-            <td width=12.5% colspan="2">ルネ</td>
-            <td width=12.5%>経済</td>
+            <th width=12.5%>ハンド<br>アウト</th>
+            <td width=12.5% colspan="2">社会契約説</td>
+            <td width=12.5%>憲法</td>
+            <td width=12.5%>平等権</td>
+            <td width=12.5%>精神の自由</td>
+            <td width=12.5%>人身の自由</td>
+            <td width=12.5%>経済の自由</td>
+            <td width=12.5%>社会権</td>
+
         </tr>
          <tr>
-            <th>K1-1</th>
-            <td><a class="noadjust" href="" target="_blank"</a>F</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ypatwm7k" target="_blank"</a>D</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yubvh3g5" target="_blank"</a>B</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ypd58l45" target="_blank"</a>E</td>
-            <td><a class="noadjust" href="http://tinyurl.com/2cftntbp" target="_blank"</a>A</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yvb52w5r" target="_blank"</a>C</td>
-            <td><a class="noadjust" href="http://tinyurl.com/258kzp4w" target="_blank"</a>T</td>
+            <th>K1-4</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
         </tr>
          <tr>
-            <th>K1-2</th>
-            <td><a class="noadjust" href="http://tinyurl.com/yor96jsw" target="_blank"</a>F</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ymvgukec" target="_blank"</a>A</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yv6og4wx" target="_blank"</a>C</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yuugemfz" target="_blank"</a>E</td>
-            <td><a class="noadjust" href="http://tinyurl.com/ywsbf8qp" target="_blank"</a>B</td>
-            <td><a class="noadjust" href="http://tinyurl.com/yrbthcnq" target="_blank"</a>D</td>
-            <td><a class="noadjust" href="http://tinyurl.com/258kzp4w" target="_blank"</a>T</td></td>
-  <tr>
-            <th>みほん</th>
-            <td><a class="noadjust" href="http://tinyurl.com/23qfaqam" target="_blank"</a>T</td>
-            <td><a class="noadjust" href="http://tinyurl.com/2dk4q6b6" target="_blank"</a>1-6</td>
-            <td><a class="noadjust" href="http://tinyurl.com/2xm86rh6" target="_blank"</a>1-6</td>
-            <td><a class="noadjust" href="http://tinyurl.com/2xv7jts4" target="_blank"</a>1-5</td>
-            <td colspan="2"><a class="noadjust" href="http://tinyurl.com/2atmpobn" target="_blank"</a>1-6</td>
-            <td><a class="noadjust" href="http://tinyurl.com/258kzp4w" target="_blank"</a>T</td></td>
+            <th>K1-5</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
         </tr>
+        <tr>
+            <th>K1-6</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+        </tr>
+         <tr>
+            <th>K1-7</th>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+        </tr>
+        <tr>
+            <th>K1-8</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+        </tr>
+        <tr>
+            <th>K1-9</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+        </tr>
+             <tr>
+            <th>K1-10</th>
+            <td  colspan="2"><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+            <td><a class="noadjust" href="" target="_blank"</a>7</td>
+        </tr>
+      
     </tbody>
 </table>  
 
-
-<a class="noadjust" href="https://www.free-counter.jp/"><img src="https://www.f-counter.net/j/61/1675243338/" alt="アクセスカウンター"></a>  
-  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
-</body>
-
 </html>
 
-<script src="filesystem:https://webmaker.app/temporary/script.js">
-</script>
-</body>
-</html>
 
-<script src="filesystem:https://webmaker.app/temporary/script.js">
-</script>
-</body>
-</html>
-
-<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
-</script>
 </body>
 </html>
